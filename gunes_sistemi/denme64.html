@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İstatistik Testi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body { font-family: sans-serif; margin: 0; }
+    
+    /* CSS KODLARIMIZ BURADA */
+    .istatistik-kapsayici {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 20px;
+        background-color: #f9f9f9; /* Hafif gri arka plan */
+        flex-wrap: wrap; /* Mobilde alt alta geçmesini sağlar */
+    }
+
+    .sayac-kutu {
+        background: white;
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+        border-radius: 15px; /* Köşeleri yuvarlar */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Gölge efekti */
+        transition: 0.3s; /* Hareketin yumuşaklığı */
+        border: 1px solid #eee; /* Çok ince kenarlık */
+    }
+
+    .sayac-kutu:hover {
+        transform: translateY(-10px); /* Mouse gelince yukarı zıplar */
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Gölge koyulaşır */
+    }
+
+    .sayac-kutu i {
+        font-size: 40px;
+        color: #007bff; /* Mavi renk (Sitenize göre değişebilir) */
+        margin-bottom: 15px;
+    }
+
+    .sayac-kutu .sayi {
+        display: block;
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .sayac-kutu .etiket {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="istatistik-kapsayici">
+    <div class="sayac-kutu">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span class="sayi">20+</span>
+        <span class="etiket">Yıl Tıbbi Deneyim</span>
+    </div>
+    
+    <div class="sayac-kutu">
+        <i class="fa-solid fa-book-medical"></i>
+        <span class="sayi">50+</span>
+        <span class="etiket">Bilimsel Yayın</span>
+    </div>
+
+    <div class="sayac-kutu">
+        <i class="fa-solid fa-earth-europe"></i>
+        <span class="sayi">3</span>
+        <span class="etiket">Uluslararası Deneyim</span>
+    </div>
+    
+    <div class="sayac-kutu">
+        <i class="fa-solid fa-hand-holding-medical"></i>
+        <span class="sayi">1000+</span>
+        <span class="etiket">Mutlu Hasta</span>
+    </div>
+</div>
+
+</body>
+</html>
